@@ -1,0 +1,226 @@
+<!DOCTYPE html>
+<html>
+<style>
+
+/* grid */
+.container {
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-gap: 10px;
+  padding-left: 50px;
+    padding-top: 50px;
+    padding-right: 50px;
+    padding-bottom: 50px;
+	background-image: linear-gradient(to right, black , pink);
+	 margin: 0;
+  font-family: Arial;
+}
+
+.container > * {
+	color:white;
+  font-size: 1.2em;
+  line-height: 1.5;
+  padding: 0px;  
+}
+
+nav a {
+  color: white;
+}
+
+nav a:hover {
+  color: grey
+}
+
+ul{
+    list-style:none;
+   }
+
+
+@media only screen and (min-width: 600px) {
+    
+  /* grid */
+  .container {
+    grid-template-columns: repeat(4, 1fr);
+	
+  }
+  a {
+	text-decoration: none;
+	
+	} 
+ 
+ 
+ .header {
+	padding-left: 150px;
+    padding-top: 0px;
+    padding-right: 150px;
+    padding-bottom: 80px;
+}
+ 
+  .container header,
+  .container nav,
+  .container footer {
+    grid-column: span 4;
+  }
+  
+  
+  .container section {
+    grid-column: span 3;
+     margin-right: 30px;
+    margin-left: 30px;
+  }
+  
+  
+  nav ul li {
+    display: inline-block;
+    float: center;
+	padding-top: 0px;
+    padding-left: 0px;
+    padding-bottom: 0px;
+    padding-right: 0px;
+  }
+  
+ ul { 
+	 
+	 text-align: center; 
+	 
+	}
+	
+
+a {
+	text-decoration: none;
+	} 
+  
+
+	nav ul li {
+    display: inline-block;
+    padding: 40px ;
+    float: center;
+	width: 160px;
+	padding-bottom: 100px;
+
+  }
+  
+ ul { 
+	 text-align: center;
+	}
+
+
+.img1 {
+  -ms-flex: 50%; 
+  flex: 50%;
+  padding: 0 4px;
+}
+
+
+.divRight {
+    width:20%;
+    display:block;
+    float: right;
+}
+
+.divCenter{
+    width:100%;
+    display: inline-block;
+    text-align: center; 
+	font-family: French Script MT;
+	font-size:60px;
+	color:#fff6e2;
+}
+
+.divLeft {
+    width:20%;
+    display:block;
+    float: left;
+}
+
+h3 {
+	text-align: center; 
+	font-family: Calibri;
+	color:#d1b8b4;
+	width:20%;
+    display:block;
+    font-size:40px;
+
+	
+	}
+
+}  
+</style>
+
+
+<body>
+<div class="container">
+
+<header class="header">
+	<span class="divRight"><img src="https://drive.google.com/uc?export=view&id=1MSVbl-A9bPE4l0bLXaWeM53_uLg4Vm2x" style="width:100%"></span>
+
+</header>	
+
+
+<header class="header">
+<span class="divCenter"><h1>Make your dreams come true</h1></span>
+</header>	
+
+
+  <nav id="nav" role="navigation">    
+      <ul>
+          <li>
+		  <h2>
+              <a href="#">Inicio</a>
+			</h2>
+          </li>
+          <li>
+		  <h2>
+              <a href="#">Servicios</a>
+			  </h2>
+          </li>
+          <li>
+		  <h2>
+              <a href="#">Noticias</a>
+			  </h2>
+          </li>
+           <li>
+		  <h2>
+              <a href="#">Contacto</a>
+			  </h2>
+          </li>
+      </ul>
+        
+     
+
+  </nav>
+	
+ <header class="header">
+    <img src="https://drive.google.com/uc?export=view&id=18XJ9p092Zo4EwmW7j4Zn-uO4T0u3ZVQ8" style="width:100%">
+  </header>
+
+
+  <section role="main">
+      <article>
+          <h3>Servicios</h3>
+          <p>Curabitur orci lacus, auctor ut facilisis nec, ultricies quis nibh. Phasellus id diam sollicitudin, malesuada turpis id, gravida erat. Maecenas placerat elit vel hendrerit convallis. Sed in mauris ut justo vulputate viverra feugiat ac dui. Fusce feugiat arcu in vehicula vehicula. Donec varius justo at nulla aliquet volutpat.</p> 
+          <p>Ut id rutrum eros. Nulla tristique, magna et mattis vulputate, mi eros suscipit turpis, nec bibendum turpis nunc feugiat sapien. Nunc arcu est, lacinia id diam quis, sagittis euismod neque. Nullam fringilla velit sed porta gravida. Proin eu vulputate libero. Ut a lacinia enim. Etiam venenatis mauris et orci tempor congue. Sed tempor eros et ultricies congue. Aenean sed efficitur orci. Nulla vel tempus mi.</p>
+      </article>
+	  
+  </section>
+
+  <aside>
+      <h3>Noticias</h3>
+	  <p>Curabitur orci lacus, auctor ut facilisis nec, ultricies quis nibh. Phasellus id diam sollicitudin, malesuada turpis id, gravida erat. Maecenas placerat elit vel hendrerit convallis. Sed in mauris ut justo vulputate viverra feugiat ac dui. Fusce feugiat arcu in vehicula vehicula. Donec varius justo at nulla aliquet volutpat.</p> 
+          <p>Ut id rutrum eros. Nulla tristique, magna et mattis vulputate, mi eros suscipit turpis, nec bibendum turpis nunc feugiat sapien. Nunc arcu est, lacinia id diam quis, sagittis euismod neque. Nullam fringilla velit sed porta gravida. Proin eu vulputate libero. Ut a lacinia enim. Etiam venenatis mauris et orci tempor congue. Sed tempor eros et ultricies congue. Aenean sed efficitur orci. Nulla vel tempus mi.</p>
+	</aside>
+
+  <footer>
+      <h3>Contacto</h3>
+      <header class="header">
+		  <span class="divLeft"><img src="https://drive.google.com/uc?export=view&id=1WRV3TuDgWF2xYdkTFxRCzUWm-2DcY17p" style="width:100%"></span>
+		  <span class="divRight"><img src="https://drive.google.com/uc?export=view&id=1MSVbl-A9bPE4l0bLXaWeM53_uLg4Vm2x" style="width:100%"></span>
+</header>	
+
+  </footer>
+  
+
+  
+</div>
+
+</body>
